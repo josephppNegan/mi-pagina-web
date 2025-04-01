@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Privada</title>
+    
+    <!-- Evitar indexación y ocultar referrer -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Fuente local (en lugar de Google Fonts) -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Bienvenido a mi página</h1>
+    <p>Deja tu comentario de forma anónima:</p>
+
+    <input type="text" id="nombreUsuario" placeholder="Tu nombre">
+    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+    <button onclick="publicarMensaje()">Publicar</button>
+
+    <h2>Comentarios</h2>
+    <div id="comentarios"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
